@@ -29,7 +29,7 @@ export default function Cadastro() {
             <ImageSection/>
             <FormSection>
                 <FormTitle title={<span>Faça seu <strong>cadastro!</strong></span>} />
-                <Form onSubmit={handleSubmit} className="register-form">
+                <Form onSubmit={handleSubmit}>
                     <FormGroup>    
                         <FormLabel htmlFor="nome">Nome</FormLabel>
                         <FormInput 
@@ -70,7 +70,7 @@ export default function Cadastro() {
                         Cadastrar
                     </FormButton>
                 </Form>
-                <RegisterLink href="login.html" text="Já tem uma conta?" />
+                <RegisterLink href="/login" text="Já tem uma conta? Faça seu login!" />
             </FormSection>
         </Container>
       );
